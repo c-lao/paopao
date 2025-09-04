@@ -10,7 +10,9 @@ function App() {
         <HeroSection />
         <StatsSection />
         <FeaturesSection />
+        <ContactSection />
       </div>
+      <ContactFab />
     </div>
   );
 }
@@ -99,7 +101,7 @@ function HeroSection() {
               <img
                 onClick={() => {
                   window.open(
-                    'https://s3.ap-southeast-1.amazonaws.com/app.paoscrm.com/bubbles-0.3.7-setup.exe',
+                    'https://s3.ap-southeast-1.amazonaws.com/app.paoscrm.com/bubbles-0.3.11-setup.exe',
                     '_blank'
                   );
                 }}
@@ -110,7 +112,6 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* Right side - Illustration */}
           <img src={bg001} alt="" />
         </div>
       </div>
@@ -158,7 +159,7 @@ function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Feature Card 1 */}
           <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-center justify-between mb-4">
@@ -171,12 +172,10 @@ function FeaturesSection() {
             </div>
             <ul className="space-y-3">
               {[
-                '支持200+全球语言',
-                'DeepL/谷歌专业线路',
+                'ChatGPT/DeepL/谷歌专业线路',
                 '实时秒翻高准确率',
                 '支持境外主流社交APP',
                 '安全跨国通信平台',
-                '多线路智能切换',
               ].map((item, index) => (
                 <li
                   key={index}
@@ -201,8 +200,6 @@ function FeaturesSection() {
               {[
                 '多形式营销文案发送',
                 '文本/图片/视频支持',
-                '多分类分组管理',
-                '快速导入导出功能',
                 '精准用户画像建立',
                 '提升效率30%以上',
               ].map((item, index) => (
@@ -218,6 +215,27 @@ function FeaturesSection() {
               ))}
             </ul>
           </div>
+
+          {/* Feature Card 3 - AI QA */}
+          <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 relative">
+            <div className="absolute -top-6 -right-6 w-16 h-16 bg-[#A3F4FC]/30 rounded-full blur-xl" />
+            <h3 className="text-xl font-bold text-gray-900 mb-4">AI 功能</h3>
+            <ul className="space-y-3">
+              {['AI 问答', 'AI 素材库', '智能推荐素材', '团队共享与权限'].map(
+                (item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center space-x-3 text-gray-700"
+                  >
+                    <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -225,3 +243,79 @@ function FeaturesSection() {
 }
 
 export default App;
+
+function ContactSection() {
+  return (
+    <section id="contact" className="bg-white py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6 text-gray-900"
+                  aria-hidden="true"
+                >
+                  <path d="M12 2a8 8 0 0 0-8 8v3a3 3 0 0 0 3 3h1a1 1 0 1 0 0-2H7a1 1 0 0 1-1-1v-3a6 6 0 1 1 12 0v3a1 1 0 0 1-1 1h-1a1 1 0 1 0 0 2h1a3 3 0 0 0 3-3v-3a8 8 0 0 0-8-8Z" />
+                  <path d="M9.5 18a1.5 1.5 0 0 0 0 3h5a1.5 1.5 0 0 0 0-3h-5Z" />
+                </svg>
+                联系客服
+              </h3>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {['免费试用', '专属技术支持', '上线指导', '企业方案优惠'].map(
+                  (tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 rounded-full text-sm bg-[#A3F4FC]/30 text-gray-800 border border-[#A3F4FC]/50"
+                    >
+                      {tag}
+                    </span>
+                  )
+                )}
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="https://t.me/ppscrm_888"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-gray-900 text-sm border hover:bg-gray-50 transition"
+              >
+                立即咨询
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContactFab() {
+  return (
+    <button
+      onClick={() => {
+        document
+          .getElementById('contact')
+          ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }}
+      aria-label="联系客服"
+      className="fixed bottom-6 right-6 z-50 h-12 px-4 rounded-full shadow-lg bg-[#A3F4FC] text-gray-900 border border-[#A3F4FC] hover:bg-[#8BE8F0] transition flex items-center gap-2"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="w-5 h-5"
+        aria-hidden="true"
+      >
+        <path d="M12 2a8 8 0 0 0-8 8v3a3 3 0 0 0 3 3h1a1 1 0 1 0 0-2H7a1 1 0 0 1-1-1v-3a6 6 0 1 1 12 0v3a1 1 0 0 1-1 1h-1a1 1 0 1 0 0 2h1a3 3 0 0 0 3-3v-3a8 8 0 0 0-8-8Z" />
+        <path d="M9.5 18a1.5 1.5 0 0 0 0 3h5a1.5 1.5 0 0 0 0-3h-5Z" />
+      </svg>
+      联系客服
+    </button>
+  );
+}
