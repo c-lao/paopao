@@ -101,7 +101,7 @@ function HeroSection() {
               <img
                 onClick={() => {
                   window.open(
-                    'https://s3.ap-southeast-1.amazonaws.com/app.paoscrm.com/bubbles-0.3.11-setup.exe',
+                    'https://s3.ap-southeast-1.amazonaws.com/app.paoscrm.com/bubbles-0.3.12-setup.exe',
                     '_blank'
                   );
                 }}
