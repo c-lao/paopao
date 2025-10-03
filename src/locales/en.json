@@ -1,0 +1,122 @@
+{
+  "header": {
+    "home": "Home",
+    "features": "Features",
+    "language": "English/USD",
+    "login": "Login",
+    "register": "Register"
+  },
+  "hero": {
+    "title": "Paopao",
+    "subtitle": "Smooth, Smart, Secure",
+    "description": "200+ language support, 6+, aggregates mainstream global social software, continuously optimized, distributed architecture, brings a smooth user experience",
+    "downloadApple": "Apple Download",
+    "downloadWin": "Win Download"
+  },
+  "features": {
+    "title": "Supports popular global chat applications, multiple professional translation channels",
+    "description": "One-click translation of languages from various countries, improves communication efficiency, supports over 200 languages globally"
+  },
+  "advantages": {
+    "title": "Why Choose Paopao",
+    "multiLanguage": {
+      "title": "Multi-language Support",
+      "description": "Supports 200+ languages worldwide, breaking down language barriers"
+    },
+    "smartTranslation": {
+      "title": "Smart Translation",
+      "description": "AI-powered translation technology for accurate and natural translations"
+    },
+    "secure": {
+      "title": "Secure & Private",
+      "description": "End-to-end encryption ensures your conversations remain private"
+    },
+    "easyUse": {
+      "title": "Easy to Use",
+      "description": "Simple interface, one-click translation, no learning curve"
+    }
+  },
+  "cta": {
+    "title": "Start Your Global Communication Journey",
+    "subtitle": "Download Paopao now and experience seamless cross-language communication",
+    "downloadNow": "Download Now"
+  },
+  "advantages": {
+    "title": "Our Advantages",
+    "subtitle": "Real-time bidirectional translation, AI algorithm enhancement, distributed global deployment, achieving 99.99% accuracy, improving communication experience",
+    "items": {
+      "accurateTranslation": {
+        "title": "Accurate Translation",
+        "description": "7 major translation engines, precise translation enables you to communicate quickly and accurately, whether for travel, work or study."
+      },
+      "fastResponse": {
+        "title": "Fast Response",
+        "description": "Distributed architecture, millisecond-level latency, rapid response, smooth user experience allows you to easily communicate with friends in different languages."
+      },
+      "easyOperation": {
+        "title": "Easy Operation",
+        "description": "Intuitive interface and simple operation, whether you are a beginner or experienced, you can easily get started."
+      },
+      "secureReliable": {
+        "title": "Secure & Reliable",
+        "description": "Advanced encryption technology and strict privacy policy protect user privacy and data security."
+      }
+    }
+  },
+  "communication": {
+    "title": "Convenient Communication, Your Work and Life Assistant",
+    "description": "Support quick replies, sub-account management, simpler operation, more humanized translation."
+  },
+  "socialApps": {
+    "title": "Supports popular global chat applications, multiple professional translation channels",
+    "description": "One-click translation of languages from various countries, improves communication efficiency, supports over 200 languages globally, supports mainstream global social software WhatsApp, Telegram, Line, Skype, Instagram, Twitter, Facebook, etc."
+  },
+  "translationChannels": {
+    "title": "Rich Translation Channels",
+    "description": "Supports six mainstream translation channels in the market, providing users with more comprehensive choices",
+    "channels": {
+      "google": "Google Translate",
+      "deepl": "DeepL",
+      "baidu": "Baidu Translate",
+      "tencent": "Tencent Translate",
+      "youdao": "Youdao Translate",
+      "bytedance": "ByteDance"
+    }
+  },
+  "userReviews": {
+    "title": "User Reviews",
+    "subtitle": "Content",
+    "reviews": [
+      "Recently I found a really practical tool, that is Paopao software. I usually need to communicate with friends, colleagues and clients from different countries, this software is simply my right-hand assistant. It supports 200+ languages, completely covering my translation needs! No matter what language I encounter, I can easily translate, no longer worry about language barriers.",
+      "As a foreign trade salesperson, I communicate with overseas clients daily. Paopao's AI translation feature is incredibly powerful - not only accurate but also understands context. My work efficiency has improved significantly, and client satisfaction has greatly increased. Highly recommend to friends who need cross-language communication!",
+      "Paopao's real-time translation feature is amazing! When I travel abroad, I can communicate with locals without any language barriers. The voice recognition is also very accurate, even with different accents. This is truly a must-have travel companion that makes my journeys more exciting.",
+      "I work in cross-border e-commerce and often need to handle customer service inquiries in different languages. Paopao has solved this major problem for me - now I can quickly respond to customers in various languages, greatly improving customer experience. The AI translation quality is very high, almost no manual editing needed.",
+      "As a language learner, Paopao not only helps me translate but also teaches me authentic expressions. The translation results are very natural, not as rigid as other translation software. My foreign language skills have improved rapidly - thank you for this great tool!",
+      "Our company often has international meetings, and Paopao's meeting translation feature has been a huge help. It supports multiple translation engines, allowing us to choose the most suitable one for different scenarios. The translation quality is stable, and colleagues are very satisfied. Money well spent!",
+      "I work in international logistics and deal with emails and documents from around the world daily. Paopao's document translation feature is very practical, supporting multiple formats with high accuracy. Handling international business is much easier now, with obvious efficiency improvements.",
+      "Paopao's AI translation is really intelligent - it can not only translate text but also understand context and tone. I often use it when writing English emails, and the translated content is very authentic. Clients think I'm a native speaker!",
+      "As a programmer, I often need to read foreign technical documentation. Paopao's web page translation feature is powerful - it can translate entire pages while maintaining the original format. Learning new technical materials is much more convenient now, no more language worries.",
+      "I work in international education and often need to communicate with overseas student parents. Paopao has solved my language barriers - now I can communicate fluently with parents from different countries. The translation quality is high, and parents are very satisfied with my service.",
+      "Paopao's voice translation feature is so convenient! When I'm on business trips abroad, I can just speak into my phone and it translates to the local language. Recognition is accurate, translation is fast, making my business trips much smoother. Highly recommended!",
+      "As a content creator, I often need to translate Chinese content to English for overseas platforms. Paopao's translation quality is very high, producing natural content that readers love. My overseas fan base is growing rapidly now!",
+      "Paopao's batch translation feature is very practical - it can translate large amounts of text at once. I work in localization and often need to translate large documents. Work efficiency has improved significantly, and quality is stable.",
+      "I work in international tourism and often need to provide consulting services for tourists from different countries. Paopao has solved my language problems - now I can provide quality service to global tourists. Translation is accurate, and customer satisfaction is high.",
+      "Paopao's offline translation feature is very practical - it works normally even without internet. I often use it when working in remote areas, and the translation quality remains excellent. This is really a thoughtful feature design."
+    ]
+  },
+  "floatingButtons": {
+    "backToTop": "Back to Top",
+    "customerService": "Customer Service",
+    "customerServiceError": "Customer service is temporarily unavailable, please try again later",
+    "customerServiceLoading": "Customer service is loading..."
+  },
+  "footer": {
+    "description": "Paopao - Breaking down language barriers, connecting the world",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact Us"
+    },
+    "copyright": "© 2024 Paopao. All rights reserved."
+  }
+}
