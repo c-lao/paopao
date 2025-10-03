@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTextLoop, useTextHover } from '../hooks/useTextAnimations';
-import { BASE_URL } from "../contexts/index";
+import { BASE_URL, DOWNLOAD_URL } from "../contexts/index";
 
 const btnAndroid = `${BASE_URL}btn_andriod_b.png`;
 
@@ -156,6 +156,7 @@ const CTASection: React.FC = () => {
           src={btnAndroid} 
           alt={t('hero.downloadWin')} 
           className="h-10 sm:h-11 lg:h-12 m-auto cursor-pointer max-w-full"
+          onClick={() => window.open(DOWNLOAD_URL, '_blank')}
         />
       </div>
     </section>

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTextLoop, useTextHover, useTextWave } from '../hooks/useTextAnimations';
-import { BASE_URL } from "../contexts/index";
+import { BASE_URL, DOWNLOAD_URL } from "../contexts/index";
 
 const btnAndroid = `${BASE_URL}btn_andriod_b_01.png`;
 const heroImage = `${BASE_URL}Frame_427319301_new.png`;
@@ -258,6 +258,7 @@ const Hero: React.FC = () => {
                   src={btnAndroid} 
                   alt={t('hero.downloadWin')} 
                   className="h-10 sm:h-11 lg:h-12 w-full object-contain" 
+                  onClick={() => window.open(DOWNLOAD_URL, '_blank')}
                 />
               </button>
             </div>
