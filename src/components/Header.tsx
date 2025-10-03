@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { BASE_URL, LOGIN_URL, REGISTER_URL } from "../contexts/index";
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { BASE_URL, LOGIN_URL } from '../contexts/index';
 
 const logo = `${BASE_URL}logo.png`;
 
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     let ticking = false;
@@ -23,13 +23,13 @@ const Header: React.FC = () => {
       setIsScrolled(scrollTop > 5);
 
       // 检测当前区域
-      const socialAppsElement = document.getElementById("social-apps");
+      const socialAppsElement = document.getElementById('social-apps');
       if (socialAppsElement) {
         const rect = socialAppsElement.getBoundingClientRect();
         if (rect.top <= 100) {
-          setActiveSection("features");
+          setActiveSection('features');
         } else {
-          setActiveSection("home");
+          setActiveSection('home');
         }
       }
 
@@ -45,12 +45,12 @@ const Header: React.FC = () => {
 
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (!target.closest(".language-selector")) {
+      if (!target.closest('.language-selector')) {
         setIsDropdownOpen(false);
       }
       if (
-        !target.closest(".mobile-menu") &&
-        !target.closest(".hamburger-button")
+        !target.closest('.mobile-menu') &&
+        !target.closest('.hamburger-button')
       ) {
         setIsMobileMenuOpen(false);
       }
@@ -60,20 +60,20 @@ const Header: React.FC = () => {
     updateHeaderState();
 
     // 多种方式监听滚动 - 包括捕获阶段
-    window.addEventListener("scroll", handleScroll, {
+    window.addEventListener('scroll', handleScroll, {
       passive: true,
       capture: true,
     });
-    document.addEventListener("scroll", handleScroll, {
+    document.addEventListener('scroll', handleScroll, {
       passive: true,
       capture: true,
     });
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll, true);
-      document.removeEventListener("scroll", handleScroll, true);
-      document.removeEventListener("mousedown", handleClickOutside);
+      window.removeEventListener('scroll', handleScroll, true);
+      document.removeEventListener('scroll', handleScroll, true);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -83,20 +83,20 @@ const Header: React.FC = () => {
   };
 
   const scrollToTop = () => {
-    setActiveSection("home");
+    setActiveSection('home');
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   const scrollToSocialApps = () => {
-    setActiveSection("features");
-    const socialAppsElement = document.getElementById("social-apps");
+    setActiveSection('features');
+    const socialAppsElement = document.getElementById('social-apps');
     if (socialAppsElement) {
       socialAppsElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+        behavior: 'smooth',
+        block: 'start',
       });
     }
   };
@@ -105,8 +105,8 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
         isScrolled
-          ? "bg-[#9BDCF7] border-b border-[#9BDCF7]/30 shadow-xl backdrop-blur-lg"
-          : "bg-transparent border-none shadow-none"
+          ? 'bg-[#9BDCF7] border-b border-[#9BDCF7]/30 shadow-xl backdrop-blur-lg'
+          : 'bg-transparent border-none shadow-none'
       }`}
     >
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -120,14 +120,14 @@ const Header: React.FC = () => {
               onClick={scrollToTop}
               className={`px-3 py-2 text-base font-medium transition-all duration-300 relative ${
                 isScrolled
-                  ? "text-white hover:text-blue-100"
-                  : "text-white hover:text-white/80"
+                  ? 'text-white hover:text-blue-100'
+                  : 'text-white hover:text-white/80'
               }`}
             >
-              {t("header.home")}
+              {t('header.home')}
               <div
                 className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 transition-all duration-300 ${
-                  activeSection === "home" ? "bg-white" : "bg-transparent"
+                  activeSection === 'home' ? 'bg-white' : 'bg-transparent'
                 }`}
               ></div>
             </button>
@@ -135,14 +135,14 @@ const Header: React.FC = () => {
               onClick={scrollToSocialApps}
               className={`px-3 py-2 text-base font-medium transition-all duration-300 relative ${
                 isScrolled
-                  ? "text-white hover:text-blue-100"
-                  : "text-white hover:text-white/80"
+                  ? 'text-white hover:text-blue-100'
+                  : 'text-white hover:text-white/80'
               }`}
             >
-              {t("header.features")}
+              {t('header.features')}
               <div
                 className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 transition-all duration-300 ${
-                  activeSection === "features" ? "bg-white" : "bg-transparent"
+                  activeSection === 'features' ? 'bg-white' : 'bg-transparent'
                 }`}
               ></div>
             </button>
@@ -157,24 +157,24 @@ const Header: React.FC = () => {
               rel="noopener noreferrer"
               className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                 isScrolled
-                  ? "text-white hover:text-blue-100 hover:bg-white/10"
-                  : "text-white hover:text-white/80 hover:bg-white/10"
+                  ? 'text-white hover:text-blue-100 hover:bg-white/10'
+                  : 'text-white hover:text-white/80 hover:bg-white/10'
               }`}
             >
-              {t("header.login")}
+              {t('header.login')}
             </a>
 
             {/* Register Button */}
-            <button
+            {/* <button
               className={`px-4 py-2 text-sm font-medium rounded-lg border transition-all duration-200 ${
                 isScrolled
-                  ? "text-white border-white hover:bg-white hover:text-blue-600"
-                  : "text-white border-white hover:bg-white hover:text-blue-600"
+                  ? 'text-white border-white hover:bg-white hover:text-blue-600'
+                  : 'text-white border-white hover:bg-white hover:text-blue-600'
               }`}
-              onClick={() => window.open(REGISTER_URL, "_blank")}
+              onClick={() => window.open(REGISTER_URL, '_blank')}
             >
-              {t("header.register")}
-            </button>
+              {t('header.register')}
+            </button> */}
 
             {/* Language Selector */}
             <div className="relative language-selector">
@@ -196,11 +196,11 @@ const Header: React.FC = () => {
                   />
                 </svg>
                 <span className="text-white text-sm font-medium">
-                  {t("header.language")}
+                  {t('header.language')}
                 </span>
                 <svg
                   className={`w-4 h-4 text-white transition-transform ${
-                    isDropdownOpen ? "rotate-180" : ""
+                    isDropdownOpen ? 'rotate-180' : ''
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -221,15 +221,15 @@ const Header: React.FC = () => {
                   <div className="py-1">
                     <div
                       className="px-4 py-2 text-sm text-gray-800 hover:bg-blue-50 cursor-pointer transition-colors"
-                      onClick={() => changeLanguage("en")}
+                      onClick={() => changeLanguage('zh')}
                     >
-                      English/USD
+                      中文
                     </div>
                     <div
                       className="px-4 py-2 text-sm text-gray-800 hover:bg-blue-50 cursor-pointer transition-colors"
-                      onClick={() => changeLanguage("zh")}
+                      onClick={() => changeLanguage('en')}
                     >
-                      中文/CNY
+                      English
                     </div>
                   </div>
                 </div>
@@ -275,26 +275,26 @@ const Header: React.FC = () => {
               <button
                 onClick={scrollToTop}
                 className={`px-4 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg transition-all duration-300 text-left relative ${
-                  activeSection === "home" ? "bg-white/10" : ""
+                  activeSection === 'home' ? 'bg-white/10' : ''
                 }`}
               >
-                {t("header.home")}
+                {t('header.home')}
                 <div
                   className={`absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-6 transition-all duration-300 ${
-                    activeSection === "home" ? "bg-white" : "bg-transparent"
+                    activeSection === 'home' ? 'bg-white' : 'bg-transparent'
                   }`}
                 ></div>
               </button>
               <button
                 onClick={scrollToSocialApps}
                 className={`px-4 py-2 text-base font-medium text-white hover:bg-white/10 rounded-lg transition-all duration-300 text-left relative ${
-                  activeSection === "features" ? "bg-white/10" : ""
+                  activeSection === 'features' ? 'bg-white/10' : ''
                 }`}
               >
-                {t("header.features")}
+                {t('header.features')}
                 <div
                   className={`absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-6 transition-all duration-300 ${
-                    activeSection === "features" ? "bg-white" : "bg-transparent"
+                    activeSection === 'features' ? 'bg-white' : 'bg-transparent'
                   }`}
                 ></div>
               </button>
@@ -307,14 +307,14 @@ const Header: React.FC = () => {
                   rel="noopener noreferrer"
                   className="px-4 py-2 text-sm font-medium text-center text-white hover:bg-white/10 rounded-lg transition-colors"
                 >
-                  {t("header.login")}
+                  {t('header.login')}
                 </a>
-                <button
+                {/* <button
                   className="px-4 py-2 text-sm font-medium text-center text-white border border-white hover:bg-white hover:text-blue-600 rounded-lg transition-colors"
-                  onClick={() => window.open(REGISTER_URL, "_blank")}
+                  onClick={() => window.open(REGISTER_URL, '_blank')}
                 >
-                  {t("header.register")}
-                </button>
+                  {t('header.register')}
+                </button> */}
               </div>
 
               {/* Mobile Language Selector */}
@@ -338,12 +338,12 @@ const Header: React.FC = () => {
                       />
                     </svg>
                     <span className="text-white text-sm font-medium">
-                      {t("header.language")}
+                      {t('header.language')}
                     </span>
                   </div>
                   <svg
                     className={`w-4 h-4 text-white transition-transform ${
-                      isDropdownOpen ? "rotate-180" : ""
+                      isDropdownOpen ? 'rotate-180' : ''
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -362,15 +362,15 @@ const Header: React.FC = () => {
                   <div className="mt-2 bg-white/10 rounded-lg overflow-hidden">
                     <div
                       className="px-4 py-2 text-sm text-white hover:bg-white/10 cursor-pointer transition-colors"
-                      onClick={() => changeLanguage("en")}
+                      onClick={() => changeLanguage('zh')}
                     >
-                      English/USD
+                      中文
                     </div>
                     <div
                       className="px-4 py-2 text-sm text-white hover:bg-white/10 cursor-pointer transition-colors"
-                      onClick={() => changeLanguage("zh")}
+                      onClick={() => changeLanguage('en')}
                     >
-                      中文/CNY
+                      English
                     </div>
                   </div>
                 )}

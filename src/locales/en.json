@@ -2,7 +2,7 @@
   "header": {
     "home": "Home",
     "features": "Features",
-    "language": "English/USD",
+    "language": "English",
     "login": "Login",
     "register": "Register"
   },
@@ -117,6 +117,6 @@
       "terms": "Terms of Service",
       "contact": "Contact Us"
     },
-    "copyright": "© 2024 Paopao. All rights reserved."
+    "copyright": "© 2025 Paopao. All rights reserved."
   }
 }

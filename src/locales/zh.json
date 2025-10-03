@@ -2,7 +2,7 @@
   "header": {
     "home": "首页",
     "features": "功能介绍",
-    "language": "中文/CNY",
+    "language": "中文",
     "login": "登录",
     "register": "注册"
   },
@@ -98,6 +98,6 @@
       "terms": "服务条款",
       "contact": "联系我们"
     },
-    "copyright": "© 2024 泡泡. 保留所有权利."
+    "copyright": "© 2025 泡泡. 保留所有权利."
   }
 }
