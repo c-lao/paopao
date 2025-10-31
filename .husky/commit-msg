@@ -1,0 +1,3 @@
+npx commitlint --edit $1
+
+echo Run commit-msg hook done.
