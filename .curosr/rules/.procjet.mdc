@@ -1,0 +1,42 @@
+---
+alwaysApply: true
+---
+
+### 项目概述
+
+这是一个使用 Next.js 构建的现代化企业官网项目。项目旨在打造一个交互体验优秀、性能卓越的网站。
+
+### 技术栈
+
+- **框架**: [Next.js](https://nextjs.org/) (使用 App Router)
+- **语言**: TypeScript
+- **UI 组件库**: [shadcn/ui](https://ui.shadcn.com/)，它基于 Radix UI 和 Tailwind CSS，提供了一套可定制、可访问的组件。
+- **动画库**: [Anime.js](https://animejs.com/)，用于实现流畅和复杂的动画效果。
+- **样式**: [Tailwind CSS](https://tailwindcss.com/)，一个功能优先的 CSS 框架。
+- **国际化 (i18n)**: 项目支持多语言，配置文件位于 `src/i18n`，语言包位于 `src/messages`。
+
+### 代码规范
+
+项目集成了 ESLint 和 Prettier 来确保代码风格的统一和质量。
+
+- **ESLint**: 配置位于 `eslint.config.mjs`，集成了 Next.js 的核心 web vitals 和 TypeScript 规则。
+- **Prettier**: 配置位于 `prettier.config.js`，主要规则包括：
+  - 行宽: 150
+  - 使用单引号
+  - 不使用分号
+  - 在对象和数组末尾添加逗号
+  - 集成了 `prettier-plugin-tailwindcss` 来自动排序 Tailwind CSS 类名。
+
+### 项目结构
+
+- `src/app`: Next.js 的 App Router 目录，包含了页面、布局和路由。
+- `src/components`: 存放全局和可复用的 React 组件。
+  - `src/components/ui`: 存放由 shadcn/ui 生成的 UI 组件。
+- `src/lib`: 存放辅助函数和工具库 (`utils.ts`, `fonts.ts`)。
+- `src/i18n`: 存放国际化相关的配置。
+- `src/messages`: 存放不同语言的 JSON 文件。
+- `public`: 存放静态资源，如图片和 SVG。
+
+### 开发目标
+
+当前的主要目标是开发官网界面，充分利用 `shadcn/ui` 构建美观的 UI，并结合 `anime.js` 添加丰富的交互动画，提升用户体验。

@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "commit": "cz-git",
+    "commit": "cz",
     "prepare": "husky"
   },
   "dependencies": {
