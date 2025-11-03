@@ -30,25 +30,7 @@ const commitlintConfig = {
      * type[scope]: [function] description
      * ^^^^
      */
-    'type-enum': [
-      2,
-      'always',
-      [
-        'feat',
-        'fix',
-        'perf',
-        'style',
-        'docs',
-        'test',
-        'refactor',
-        'build',
-        'ci',
-        'chore',
-        'revert',
-        'types',
-        'release',
-      ],
-    ],
+    'type-enum': [2, 'always', ['feat', 'fix', 'perf', 'style', 'docs', 'test', 'refactor', 'build', 'ci', 'chore', 'revert', 'types', 'release']],
   },
   prompt: {
     alias: { fd: 'docs: fix typos' },
@@ -134,6 +116,6 @@ const commitlintConfig = {
     defaultScope: '',
     defaultSubject: '',
   },
-};
+}
 
-export default commitlintConfig;
+export default commitlintConfig
