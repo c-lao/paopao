@@ -1,5 +1,4 @@
 'use client'
-import { ThemeLang } from '@/components/theme-lang'
 import { Button } from '@/components/ui/button'
 import { ASSETS, LOGIN_URL, REGISTER_URL } from '@/constants'
 import { useTranslations } from 'next-intl'
@@ -28,7 +27,6 @@ function Header() {
         </Link>
 
         <div className="flex items-center gap-4">
-          <ThemeLang />
           <Button asChild variant="outline" className="hidden md:inline-flex">
             <Link target="_blank" href={LOGIN_URL}>
               {t('common.login')}
