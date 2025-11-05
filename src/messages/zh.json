@@ -1,0 +1,159 @@
+{
+  "common": {
+    "appName": "泡泡",
+    "login": "登录",
+    "register": "注册",
+    "freeTrial": "免费试用",
+    "downloadClient": "下载客户端",
+    "viewAllFeatures": "查看所有功能",
+    "learnMore": "查看更多",
+    "startFreeTrial": "开启免费试用"
+  },
+  "header": {
+    "nav": {
+      "home": "首页",
+      "feature": "功能介绍",
+      "price": "价格方案",
+      "download": "软件下载",
+      "recom": "代理推广",
+      "contact": "联系我们"
+    }
+  },
+  "hero": {
+    "title": "泡泡 聚合翻译客服系统",
+    "subtitle": "消除语言屏障，追踪全球商机",
+    "description": "提供一站式多账号聚合管理、实时翻译、高效的粉丝运营以及SCRM客户管理平台，支持线索管理等运维功能，帮助企业优化全球客户沟通链路，推动私域全流程增长！"
+  },
+  "counter": {
+    "users": "已累计服务用户",
+    "fans": "已帮助企业拓客粉丝",
+    "market": "未来将触达粉丝市场",
+    "marketUnit": "亿"
+  },
+  "service": {
+    "title": "消除语言屏障",
+    "subtitle": "追踪全球商机",
+    "mainTitle": "是一款集实时双向多语言翻译|||客户关系管理于一体的跨境私域管理营销工具",
+    "items": {
+      "translation": {
+        "title": "智能双向实时翻译",
+        "subtitle": "泡泡翻译系统|||让每一句对话都通向世界"
+      },
+      "analytics": {
+        "title": "线索计数器/分流链接/工单报表",
+        "subtitle": "高效管理分析客户数据，可生成API密钥，授权合作方查询工单线索信息。"
+      },
+      "marketing": {
+        "title": "营销SCRM/标签分类/快捷回复",
+        "subtitle": "快捷回复、群发，一键发送多形式营销素材，包括文字、图片、视频等，客户跟进记录。"
+      },
+      "management": {
+        "title": "一站式多账号管理/自定义IP",
+        "subtitle": "多平台多账号聚合，扫码登录账号，满足多终端客户支持和社交账号稳定运营需求，可自定义IP。"
+      }
+    }
+  },
+  "platform": {
+    "title": "多平台客户",
+    "subtitle": "运维拓客及营销",
+    "description": "支持WhatsApp、LINE、Telegram等多平台客户运维"
+  },
+  "rated": {
+    "title": "用户",
+    "subtitle": "始终如一",
+    "rating": "好评",
+    "score": "4.9/5",
+    "titlePart1": "用户",
+    "titlePart2": "始终如一",
+    "titlePart3": "好评",
+    "titlePart4": "如潮",
+    "titlePart5": "4.9/5",
+    "testimonials": [
+      {
+        "text": "及时响应客户需求，创造营销场景",
+        "stars": 5
+      },
+      {
+        "text": "跨语言沟通就像说母语般自然流畅",
+        "stars": 5
+      },
+      {
+        "text": "方便公司快速分享数据给客户",
+        "stars": 5
+      }
+    ]
+  },
+  "card": {
+    "title": "所有",
+    "subtitle": "多渠道消息",
+    "description": "都集中在一处",
+    "content": "通过WhatsApp、Facebook、Messenger、TikTok、Instagram、Telegram、Line等无缝销售、营销或服务，以获得统一的客户体验"
+  },
+  "sales": {
+    "title": "抓住我们",
+    "subtitle": "产品",
+    "description": "的每一个销售机会",
+    "content": "集中地管理您的客户，实现高效的细分、跟踪和线索分析功能",
+    "features": {
+      "feature1": "客户画像精准描述，提升服务体验，升级客户忠诚度",
+      "feature2": "全方位监控对话质量，实时追踪数据，为管理层决策提供有效支持",
+      "feature3": "即使您不懂客户的语言，也能与他们沟通"
+    }
+  },
+  "testimonial": {
+    "title": "用户体验",
+    "subtitle": "来自我们的客户",
+    "description": "真实用户持续好评，通过清晰透明的体验告诉我们与泡泡的高效协作",
+    "testimonials": [
+      {
+        "name": "Andy Liu",
+        "role": "跨境电商工作室",
+        "text": "泡泡翻译客服系统功能很扎实，双向实时翻译、多平台账号统一管理、无限多开这些核心需求都能满足。WhatsApp/Telegram/Line等渠道都支持，对初创团队特别友好，省成本的同时效率提升明显，值得试试。",
+        "rating": 5
+      },
+      {
+        "name": "Jackson",
+        "role": "广告主",
+        "text": "我们做广告推广，应用泡泡 聚合翻译客服系统解决方案后，流量结算数据非常清晰透明，公司团队对外客户服务及时间管理上均有大幅改善，已成为我们业务上不可缺少的工具！客户对我们的服务满意度大幅提升！",
+        "rating": 5
+      },
+      {
+        "name": "Barton",
+        "role": "电商独立站",
+        "text": "当客户有新消息时，泡泡系统实时通知我，也支持实时翻译，这样无论客户什么语言消息，我们都能实时无障碍沟通，避免客户流失。整体上，我认为泡泡客户营销系统是我们电商独立站产生更多销售额并拥有出色客户服务的最佳软件。",
+        "rating": 5
+      },
+      {
+        "name": "David",
+        "role": "出海工作者",
+        "text": "作为一家外贸公司的CEO，我对公司的国际业务充满信心。泡泡为我们提供了一个出色的工具，帮助我们的团队与全球客户和供应商进行无障碍的交流。它的多语言支持和社交APP整合让我们的业务更具国际竞争力，提供的客户备注等功能也非常实用，促进了公司的增长和成功",
+        "rating": 5
+      }
+    ]
+  },
+  "cta": {
+    "title": "为客户提供出色的服务",
+    "subtitle": "您准备好了吗？"
+  },
+  "footer": {
+    "slogan": "消除语言屏障，追踪全球商机",
+    "quickLinks": "快捷链接",
+    "contactUs": "联系我们",
+    "followUs": "关注我们的频道",
+    "features": {
+      "feature1": "精准客户开发",
+      "feature2": "多语言自动检测",
+      "feature3": "实时翻译",
+      "feature4": "多平台聚合管理",
+      "feature5": "全球触达",
+      "feature6": "消息备份",
+      "feature7": "数据统计",
+      "feature8": "粉丝运营",
+      "feature9": "支持产品定制",
+      "feature10": "免费试用",
+      "feature11": "线索分析",
+      "feature12": "工单管理",
+      "feature13": "营销SCRM"
+    }
+  }
+}

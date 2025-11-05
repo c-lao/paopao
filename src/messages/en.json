@@ -1,0 +1,159 @@
+{
+  "common": {
+    "appName": "Paopao",
+    "login": "Login",
+    "register": "Register",
+    "freeTrial": "Free Trial",
+    "downloadClient": "Download Client",
+    "viewAllFeatures": "View All Features",
+    "learnMore": "Learn More",
+    "startFreeTrial": "Start Free Trial"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "feature": "Features",
+      "price": "Pricing",
+      "download": "Download",
+      "recom": "Affiliate",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "title": "POPO Translation Service System",
+    "subtitle": "Break Language Barriers, Track Global Opportunities",
+    "description": "Providing one-stop multi-account aggregation management, real-time translation, efficient fan operations and SCRM customer management platform, supporting lead management and other operation functions to help enterprises optimize global customer communication links and promote private domain full-process growth!"
+  },
+  "counter": {
+    "users": "Total Users Served",
+    "fans": "Fans Helped for Businesses",
+    "market": "Future Market Reach",
+    "marketUnit": "Billion"
+  },
+  "service": {
+    "title": "Break Language Barriers",
+    "subtitle": "Track Global Opportunities",
+    "mainTitle": "A cross-border private domain management and marketing tool integrating real-time two-way multi-language translation|||and customer relationship management",
+    "items": {
+      "translation": {
+        "title": "Intelligent Two-way Real-time Translation",
+        "subtitle": "CEO Translation System|||Make Every Conversation Reach the World"
+      },
+      "analytics": {
+        "title": "Lead Counter/Shunt Link/Work Order Report",
+        "subtitle": "Efficiently manage and analyze customer data, generate API keys, and authorize partners to query work order lead information."
+      },
+      "marketing": {
+        "title": "Marketing SCRM/Tag Classification/Quick Reply",
+        "subtitle": "Quick reply, group sending, one-click sending of multiple forms of marketing materials, including text, images, videos, etc., customer follow-up records."
+      },
+      "management": {
+        "title": "One-stop Multi-account Management/Custom IP",
+        "subtitle": "Multi-platform and multi-account aggregation, scan code login, meeting multi-terminal customer support and social account stable operation needs, custom IP available."
+      }
+    }
+  },
+  "platform": {
+    "title": "Multi-platform Customers",
+    "subtitle": "Operation & Marketing",
+    "description": "Supporting multi-platform customer operations such as WhatsApp, LINE, Telegram"
+  },
+  "rated": {
+    "title": "Users",
+    "subtitle": "Consistently",
+    "rating": "Highly Rated",
+    "score": "4.9/5",
+    "titlePart1": "Users",
+    "titlePart2": "Consistently",
+    "titlePart3": "Highly Rated",
+    "titlePart4": "with",
+    "titlePart5": "4.9/5",
+    "testimonials": [
+      {
+        "text": "Timely response to customer needs, creating marketing scenarios",
+        "stars": 5
+      },
+      {
+        "text": "Cross-language communication is as natural and fluent as speaking your mother tongue",
+        "stars": 5
+      },
+      {
+        "text": "Convenient for companies to quickly share data with customers",
+        "stars": 5
+      }
+    ]
+  },
+  "card": {
+    "title": "All",
+    "subtitle": "Multi-channel Messages",
+    "description": "Centralized in One Place",
+    "content": "Seamlessly sell, market or serve through WhatsApp, Facebook, Messenger, TikTok, Instagram, Telegram, Line, etc., for a unified customer experience"
+  },
+  "sales": {
+    "title": "Seize Every",
+    "subtitle": "Product",
+    "description": "Sales Opportunity",
+    "content": "Centrally manage your customers, achieve efficient segmentation, tracking and lead analysis functions",
+    "features": {
+      "feature1": "Accurate customer profiling to improve service experience and upgrade customer loyalty",
+      "feature2": "Comprehensive monitoring of conversation quality, real-time data tracking, providing effective support for management decisions",
+      "feature3": "Communicate with customers even if you don't understand their language"
+    }
+  },
+  "testimonial": {
+    "title": "User Experience",
+    "subtitle": "From Our Customers",
+    "description": "Real user continuous praise, through crystal clear experience to tell them the efficient collaboration with Popo",
+    "testimonials": [
+      {
+        "name": "Andy Liu",
+        "role": "E-commerce Studio",
+        "text": "The Popo translation customer service system is very solid, satisfying the core needs of two-way real-time translation, multi-account unified management, and unlimited multi-opening. WhatsApp/Telegram/Line and other channels are supported, which is very friendly to the startup team, saving costs while significantly improving efficiency, and it's worth trying.",
+        "rating": 5
+      },
+      {
+        "name": "Jackson",
+        "role": "Advertiser",
+        "text": "We do advertising promotion, and after applying the Popo translation customer service system solution, the traffic settlement data is very clear and transparent, and the company team's external customer service and time management have been greatly improved, becoming an indispensable tool for our business! The customer satisfaction with our service has been greatly improved!",
+        "rating": 5
+      },
+      {
+        "name": "Barton",
+        "role": "E-commerce Independent Site",
+        "text": "When a customer has new messages, the Popo system will notify me in real time, and also support real-time translation, so that we can communicate seamlessly with customers in any language, avoiding customer loss. Overall, I think the Popo customer marketing system is the best software for our e-commerce independent site to generate more sales and provide excellent customer service.",
+        "rating": 5
+      },
+      {
+        "name": "David",
+        "role": "Outbound Worker",
+        "text": "As the CEO of a foreign trade company, I am confident in the international business of my company. Popo has provided us with a great tool to help our team communicate seamlessly with global customers and suppliers. Its multi-language support and social APP integration make our business more competitive internationally, and the customer notes function is also practical, promoting the growth and success of the company",
+        "rating": 5
+      }
+    ]
+  },
+  "cta": {
+    "title": "Provide Excellent Service to Customers",
+    "subtitle": "Are You Ready?"
+  },
+  "footer": {
+    "slogan": "Break Language Barriers, Track Global Opportunities",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Our Channel",
+    "features": {
+      "feature1": "Precise Customer Development",
+      "feature2": "Multi-language Auto Detection",
+      "feature3": "Real-time Translation",
+      "feature4": "Multi-platform Aggregation Management",
+      "feature5": "Global Reach",
+      "feature6": "Message Backup",
+      "feature7": "Data Statistics",
+      "feature8": "Fan Operations",
+      "feature9": "Product Customization Support",
+      "feature10": "Free Trial",
+      "feature11": "Lead Analysis",
+      "feature12": "Work Order Management",
+      "feature13": "Marketing SCRM"
+    }
+  }
+}

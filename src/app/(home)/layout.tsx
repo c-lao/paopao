@@ -1,10 +1,21 @@
-import Header from '@/components/header'
+import { interSans } from '@/lib/fonts'
+import { useLocale } from 'next-intl'
+import Footer from './components/footer'
+import Header from './components/header'
 
-export default function HomeLayout({ children }: { children: React.ReactNode }) {
+interface HomeLayoutProps {
+  children: React.ReactNode
+}
+
+export default function HomeLayout({ children }: HomeLayoutProps) {
+  const locale = useLocale()
   return (
-    <>
-      <Header />
-      {children}
-    </>
+    <html lang={locale}>
+      <body className={`${interSans.variable} font-sans antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
   )
 }

@@ -1,0 +1,9 @@
+{
+  "i18n-ally.localesPaths": ["src/i18n", "src/messages"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "i18n-ally.keystyle": "nested"
+}
