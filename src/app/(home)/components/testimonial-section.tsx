@@ -1,7 +1,6 @@
 'use client'
 
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
-import { ASSETS } from '@/constants'
 import { motion } from 'motion/react'
 import { useMessages, useTranslations } from 'next-intl'
 import Marquee from 'react-fast-marquee'
@@ -15,7 +14,7 @@ export default function TestimonialSection() {
   const testimonials = (messages.testimonial as { testimonials: Testimonial[] }).testimonials
 
   return (
-    <section style={{ backgroundImage: `url(${ASSETS.footerBg})` }} className="relative bg-cover bg-center py-20">
+    <section style={{ backgroundImage: `url('https://cdn.paoscrm.com/assets/footer-bg.png')` }} className="relative bg-cover bg-center py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
