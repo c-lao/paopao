@@ -3,14 +3,6 @@ import createNextIntlPlugin from 'next-intl/plugin'
 
 const nextConfig: NextConfig = {
   output: 'export',
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cdn.paoscrm.com',
-      },
-    ],
-  },
 }
 
 const withNextIntl = createNextIntlPlugin()
