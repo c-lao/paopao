@@ -8,10 +8,6 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'cdn.paoscrm.com',
       },
-      {
-        protocol: 'https',
-        hostname: 'www.ceoscrm.com',
-      },
     ],
   },
 }

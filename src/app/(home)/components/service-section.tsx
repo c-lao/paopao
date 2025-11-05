@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { LOGIN_URL } from '@/constants'
 import { motion } from 'motion/react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -36,7 +37,6 @@ export default function ServiceSection() {
       ),
       label: tService('items.translation.title'),
       title: tService('items.translation.subtitle'),
-      link: '#features',
     },
   ]
 
@@ -51,7 +51,7 @@ export default function ServiceSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="relative overflow-hidden rounded-lg p-8 text-white lg:col-span-2"
           style={{
-            backgroundImage: `url('https://www.ceoscrm.com/assets/img/service/service-3-bg.png')`,
+            backgroundImage: `url('https://cdn.paoscrm.com/assets/service-3-bg.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -62,7 +62,7 @@ export default function ServiceSection() {
             <div className="mb-6 flex items-start gap-4">
               <div className="shrink-0">
                 <Image
-                  src="https://www.ceoscrm.com/assets/img/service/sv-icon-3-1.png"
+                  src="https://cdn.paoscrm.com/assets/sv-icon-3-1.png"
                   alt={`${tCommon('appName')} SCRM`}
                   width={64}
                   height={64}
@@ -75,7 +75,7 @@ export default function ServiceSection() {
             {/* 主标题 */}
             <div className="mb-8 flex-1">
               <h4 className="text-xl leading-relaxed font-semibold md:text-2xl">
-                <Link href="#features" className="hover:opacity-90">
+                <Link target="_blank" href={LOGIN_URL} className="hover:opacity-90">
                   {tService('mainTitle')
                     .split('|||')
                     .map((part, index, array) => (
@@ -91,20 +91,16 @@ export default function ServiceSection() {
             {/* 按钮 */}
             <div>
               <Button asChild size="lg" variant="secondary">
-                <Link href="#features">{tCommon('learnMore')}</Link>
+                <Link target="_blank" href={LOGIN_URL}>
+                  {tCommon('learnMore')}
+                </Link>
               </Button>
             </div>
           </div>
 
           {/* 右侧装饰形状 */}
           <div className="pointer-events-none absolute right-0 bottom-0 z-10 hidden lg:block">
-            <Image
-              src="https://www.ceoscrm.com/assets/img/service/service-shape-3-1.png"
-              alt=""
-              width={200}
-              height={200}
-              className="h-auto w-auto opacity-70"
-            />
+            <Image src="https://cdn.paoscrm.com/assets/service-shape-3-1.png" alt="" width={200} height={200} className="h-auto w-auto opacity-70" />
           </div>
         </motion.div>
 
@@ -121,18 +117,18 @@ export default function ServiceSection() {
             <div className="flex flex-1 flex-col text-center">
               <span className="text-muted-foreground mb-3 text-sm font-medium">{service.label}</span>
               <h3 className="mb-4 flex-1 text-base leading-relaxed font-semibold">
-                <Link href={service.link} className="text-foreground">
+                <div className="text-foreground">
                   {service.title.split('|||').map((line, i, array) => (
                     <span key={i}>
                       {line}
                       {i < array.length - 1 && <br />}
                     </span>
                   ))}
-                </Link>
+                </div>
               </h3>
               <div className="mt-auto">
                 <Button asChild variant="ghost" size="sm" className="text-sm">
-                  <Link href={service.link}>
+                  <Link target="_blank" href={LOGIN_URL}>
                     {tCommon('learnMore')} <span className="ml-1">→</span>
                   </Link>
                 </Button>

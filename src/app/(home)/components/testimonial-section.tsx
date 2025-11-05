@@ -1,6 +1,7 @@
 'use client'
 
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
+import { ASSETS } from '@/constants'
 import { motion } from 'motion/react'
 import { useMessages, useTranslations } from 'next-intl'
 import Marquee from 'react-fast-marquee'
@@ -13,11 +14,9 @@ export default function TestimonialSection() {
 
   const testimonials = (messages.testimonial as { testimonials: Testimonial[] }).testimonials
 
-  const marqueeContent = [...testimonials, ...testimonials]
-
   return (
-    <section className="py-28">
-      <div className="container mx-auto max-w-5xl px-6">
+    <section style={{ backgroundImage: `url(${ASSETS.footerBg})` }} className="relative bg-cover bg-center py-20">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,22 +43,6 @@ export default function TestimonialSection() {
             <Marquee pauseOnHover speed={120} gradient={false}>
               {testimonials.map((testimonial, index) => (
                 <TestimonialCard key={`${testimonial.name}-${index}`} testimonial={testimonial} />
-              ))}
-            </Marquee>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            style={{
-              maskImage: 'linear-gradient(90deg, transparent 0%, black 12%, black 88%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(90deg, transparent 0%, black 12%, black 88%, transparent 100%)',
-            }}>
-            <Marquee pauseOnHover speed={120} gradient={false} direction="right">
-              {marqueeContent.map((testimonial, index) => (
-                <TestimonialCard key={`${testimonial.name}-${index}-reverse`} testimonial={testimonial} />
               ))}
             </Marquee>
           </motion.div>

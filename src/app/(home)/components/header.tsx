@@ -21,7 +21,7 @@ function Header() {
   }, [])
 
   return (
-    <header className={`fixed top-0 right-0 left-0 z-50 bg-transparent transition-all duration-300 ${y > 100 ? 'bg-white' : ''}`}>
+    <header className={`fixed top-0 right-0 left-0 z-50 bg-transparent transition-all duration-300 ${y > 100 ? 'bg-white/80 backdrop-blur' : ''}`}>
       <div className="relative container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-1.5">
           <Image src={ASSETS.logo} alt="logo" width={48} height={48} />

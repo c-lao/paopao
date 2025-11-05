@@ -1,18 +1,12 @@
-import { ASSETS } from '@/constants'
-import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const Footer = () => {
+  const t = useTranslations()
   return (
-    <footer className="relative">
-      <Image
-        src={ASSETS.footerBg}
-        alt="footer-bg"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: '100%', height: 'auto' }}
-        className="absolute top-0 left-0 -z-10"
-      />
+    <footer className="py-8">
+      <p className="text-center text-sm">
+        © {new Date().getFullYear()} {t('common.appName')}. All rights reserved.
+      </p>
     </footer>
   )
 }

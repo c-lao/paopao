@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { REGISTER_URL } from '@/constants'
 import { useMessages, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -38,30 +39,18 @@ export default function RatedSection() {
       <div
         className="relative pt-[120px] pb-20"
         style={{
-          backgroundImage: `url('https://www.ceoscrm.com/assets/img/rate/rated-bg.jpg')`,
+          backgroundImage: `url('https://cdn.paoscrm.com/assets/rated-bg.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}>
         <div className="pointer-events-none absolute inset-0 hidden lg:block">
-          <Image
-            src="https://www.ceoscrm.com/assets/img/rate/rate-shape-1.png"
-            alt=""
-            width={400}
-            height={400}
-            className="h-auto w-auto object-contain"
-          />
+          <Image src="https://cdn.paoscrm.com/assets/rate-shape-1.png" alt="" width={400} height={400} className="h-auto w-auto object-contain" />
         </div>
 
         <div className="pointer-events-none absolute inset-0 hidden sm:block">
           <div className="absolute right-0 bottom-0">
-            <Image
-              src="https://www.ceoscrm.com/assets/img/rate/rate-shape-2.png"
-              alt=""
-              width={300}
-              height={300}
-              className="h-auto w-auto object-contain"
-            />
+            <Image src="https://cdn.paoscrm.com/assets/rate-shape-2.png" alt="" width={300} height={300} className="h-auto w-auto object-contain" />
           </div>
         </div>
 
@@ -84,7 +73,9 @@ export default function RatedSection() {
                 </h5>
 
                 <Button asChild size="lg">
-                  <Link href="https://admin.ceoscrm.com/#/login">{tCommon('freeTrial')}</Link>
+                  <Link target="_blank" href={REGISTER_URL}>
+                    {tCommon('freeTrial')}
+                  </Link>
                 </Button>
               </div>
             </div>
